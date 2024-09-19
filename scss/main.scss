@@ -1,0 +1,19 @@
+// main.scss
+
+@import 'variables';
+@import 'buttons';
+@import 'forms';
+@import 'utilities';
+
+// Global styles
+body {
+    font-family: $font-stack;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $font-color;
+    background-color: #f8f9fa; // Light background color
+}
+
+h1, h2 {
+    color: $primary-color;
+}

@@ -1,0 +1,100 @@
+/* main.css */
+
+/* Core colors */
+:root {
+    --primary-color: #3498db; /* Primary color */
+    --secondary-color: #2ecc71; /* Secondary color */
+    --font-color: #333; /* Default font color */
+    --font-stack: 'Helvetica Neue', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+}
+
+/* Global styles */
+body {
+    font-family: var(--font-stack);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--font-color);
+    background-color: #f8f9fa; /* Light background color */
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    font-size: var(--font-size-base);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn.btn-primary:hover {
+    background-color: #2980b9; /* Darker shade of primary color */
+}
+
+.btn.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #27ae60; /* Darker shade of secondary color */
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--font-color);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center !important;
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem !important;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}

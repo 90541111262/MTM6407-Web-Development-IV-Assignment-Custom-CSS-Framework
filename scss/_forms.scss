@@ -1,0 +1,31 @@
+// _forms.scss
+
+@import 'variables';
+
+// Form styles
+.form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: $font-color;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+
+        &:focus {
+            border-color: $primary-color;
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+        }
+    }
+}
